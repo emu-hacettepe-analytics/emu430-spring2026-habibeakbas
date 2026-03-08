@@ -38,3 +38,7 @@ R, Quarto, Git, Python, Excel, SQL, AutoCAD, SAP
 # Hobbies
 
 Guitar, Volleyball
+
+You can download my CV here:
+
+[Download my CV](Habibe_Akbas_CV.pdf) (Habibe_Akbaş \_CV)
