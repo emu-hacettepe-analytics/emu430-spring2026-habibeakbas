@@ -39,8 +39,10 @@ R, Quarto, Git, Python, Excel, SQL, AutoCAD, SAP
 
 Guitar, Volleyball
 
+## 
+
 ## Curriculum Vitae
 
 You can download my CV below.
 
-[Download my CV](Habibe_Akbas_CV.pdf)
+[Download my CV](Habibe_Akbaş_CV.pdf)
