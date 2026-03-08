@@ -39,6 +39,8 @@ R, Quarto, Git, Python, Excel, SQL, AutoCAD, SAP
 
 Guitar, Volleyball
 
-You can download my CV below.\
-\
-\[Download my CV\](cv.pdf)
+## Curriculum Vitae
+
+You can download my CV below.
+
+<a href="cv.pdf" download>Download my CV</a>
