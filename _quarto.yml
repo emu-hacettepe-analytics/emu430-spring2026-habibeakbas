@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Habibe Akbaş - Analytics Lab"
+  title: "Habibe Akbaş | Data Analytics"
   navbar:
     search: true
     left:
@@ -19,36 +19,34 @@ website:
             href: assignments.qmd
           - text: Project
             href: project.qmd
-            
     tools:
-     tools:
-  - icon: github
-    href: https://github.com/habibeakbas
-  - icon: linkedin
-    href: https://www.linkedin.com/in/habibe-akba%C5%9F-8a3357224/
+      - icon: github
+        href: https://github.com/habibeakbas
+      - icon: linkedin
+        href: https://www.linkedin.com/in/habibe-akba%C5%9F-8a3357224/
 
   sidebar:
     - title: "Assignments"
-      style: "docked"
+      style: docked
       search: true
       contents:
         - assignments.qmd
         - assignments/assignment-1.qmd
-        - assignments/assignment-2.qmd  
+        - assignments/assignment-2.qmd
+
   page-navigation: true
   back-to-top-navigation: true
   page-footer:
-    center: "Hacettepe IE - EMU430 - 2026 Spring" 
+    center: "Hacettepe IE - EMU430 - 2026 Spring"
     border: true
+
 format:
   html:
     toc: true
     toc-location: left
-    theme: 
-      light: pulse 
+    theme:
+      light: pulse
       dark: superhero
     css: styles.css
 
-
 editor: visual
-
