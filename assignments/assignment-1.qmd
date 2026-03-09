@@ -12,4 +12,115 @@ My first assignment has two parts.
 
 ## (a)
 
+## Video Used
+
+For this assignment, I used the following video:
+
+<https://www.youtube.com/watch?v=1Mvkn71dhaA>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Mvkn71dhaA" title="YouTube video player" frameborder="0" allowfullscreen>
+
+</iframe>
+
+## Video Summary
+
+In this video, the discussion focuses on how industrial engineering and data science intersect in real-world applications. One of the key points mentioned in the conversation is that industrial engineers already have many of the analytical tools required for data science, such as statistics, optimization, and systems thinking.
+
+The speaker explains that data science is not only about building complex machine learning models. Instead, a large part of the work involves understanding the problem, cleaning the data, and interpreting the results correctly. Industrial engineers are particularly strong in these areas because they are trained to analyze systems and make data-driven decisions.
+
+Another important idea discussed in the video is the importance of combining technical skills with domain knowledge. The speaker emphasizes that knowing programming or machine learning alone is not enough. To produce meaningful insights, analysts must also understand the business or operational context of the data.
+
+Overall, the video highlights how industrial engineering provides a strong foundation for working in data science, especially in areas such as decision making, optimization, and process improvement.
+
 ## (b)
+
+## Open-ended Question
+
+The speaker emphasizes that data science is not only about building machine learning models. Why are understanding the problem and interpreting data correctly just as important as technical skills?
+
+**Answer:**
+
+Understanding the problem is essential because data alone does not automatically produce useful insights. Analysts must interpret the data within the context of the real-world system they are studying. Without proper understanding, even advanced models can produce misleading conclusions. Therefore, combining analytical thinking, domain knowledge, and technical skills is necessary for effective data-driven decision making.
+
+## Multiple Choice Question
+
+According to the discussion in the video, which skill helps industrial engineers contribute effectively to data science projects?
+
+A)  Systems thinking and analytical problem solving\
+B)  Memorizing programming syntax only\
+C)  Avoiding statistical analysis\
+D)  Ignoring the context of the data
+
+**Correct Answer:** A
+
+## R Analysis
+
+```{r}
+library(dslabs)
+
+data(polls_us_election_2016)
+data <- polls_us_election_2016
+```
+
+```{r}
+my_first <- "Habibe"
+my_birth_year <- 2003
+```
+
+```{r}
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+k
+```
+
+```{r}
+if (k %% 2 == 0) {
+  head(data, k)
+} else {
+  tail(data, k)
+}
+```
+
+```{r}
+sum(is.na(data))
+```
+
+```{r}
+sort(colSums(is.na(data)), decreasing = TRUE)[1:8]
+```
+
+```{r}
+new_data <- data
+
+for (i in seq_along(new_data)) {
+  
+  if (is.numeric(new_data[[i]])) {
+    new_data[[i]][is.na(new_data[[i]])] <- my_birth_year + k
+    
+  } else if (is.character(new_data[[i]])) {
+    new_data[[i]][is.na(new_data[[i]])] <- paste0(my_first, "_", k)
+    
+  } else if (is.factor(new_data[[i]])) {
+    new_data[[i]] <- as.character(new_data[[i]])
+    new_data[[i]][is.na(new_data[[i]])] <- paste0(my_first, "_", k)
+    
+  } else if (inherits(new_data[[i]], "Date")) {
+    new_data[[i]][is.na(new_data[[i]])] <- as.Date("2000-01-01")
+  }
+}
+```
+
+```{r}
+if (k %% 2 == 0) {
+  head(new_data, k)
+} else {
+  tail(new_data, k)
+}
+```
+
+```{r}
+sum(is.na(new_data))
+```
+
+```{r}
+anyNA(new_data)
+```

@@ -387,7 +387,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#assignment-1" id="toc-assignment-1" class="nav-link active" data-scroll-target="#assignment-1">Assignment 1</a>
   <ul class="collapse">
   <li><a href="#a" id="toc-a" class="nav-link" data-scroll-target="#a">(a)</a></li>
+  <li><a href="#video-used" id="toc-video-used" class="nav-link" data-scroll-target="#video-used">Video Used</a></li>
+  <li><a href="#video-summary" id="toc-video-summary" class="nav-link" data-scroll-target="#video-summary">Video Summary</a></li>
   <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b">(b)</a></li>
+  <li><a href="#open-ended-question" id="toc-open-ended-question" class="nav-link" data-scroll-target="#open-ended-question">Open-ended Question</a></li>
+  <li><a href="#multiple-choice-question" id="toc-multiple-choice-question" class="nav-link" data-scroll-target="#multiple-choice-question">Multiple Choice Question</a></li>
+  <li><a href="#r-analysis" id="toc-r-analysis" class="nav-link" data-scroll-target="#r-analysis">R Analysis</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -431,8 +436,334 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="a" class="level2">
 <h2 class="anchored" data-anchor-id="a">(a)</h2>
 </section>
+<section id="video-used" class="level2">
+<h2 class="anchored" data-anchor-id="video-used">Video Used</h2>
+<p>For this assignment, I used the following video:</p>
+<p><a href="https://www.youtube.com/watch?v=1Mvkn71dhaA" class="uri">https://www.youtube.com/watch?v=1Mvkn71dhaA</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Mvkn71dhaA" title="YouTube video player" frameborder="0" allowfullscreen="">
+</iframe>
+</section>
+<section id="video-summary" class="level2">
+<h2 class="anchored" data-anchor-id="video-summary">Video Summary</h2>
+<p>In this video, the discussion focuses on how industrial engineering and data science intersect in real-world applications. One of the key points mentioned in the conversation is that industrial engineers already have many of the analytical tools required for data science, such as statistics, optimization, and systems thinking.</p>
+<p>The speaker explains that data science is not only about building complex machine learning models. Instead, a large part of the work involves understanding the problem, cleaning the data, and interpreting the results correctly. Industrial engineers are particularly strong in these areas because they are trained to analyze systems and make data-driven decisions.</p>
+<p>Another important idea discussed in the video is the importance of combining technical skills with domain knowledge. The speaker emphasizes that knowing programming or machine learning alone is not enough. To produce meaningful insights, analysts must also understand the business or operational context of the data.</p>
+<p>Overall, the video highlights how industrial engineering provides a strong foundation for working in data science, especially in areas such as decision making, optimization, and process improvement.</p>
+</section>
 <section id="b" class="level2">
 <h2 class="anchored" data-anchor-id="b">(b)</h2>
+</section>
+<section id="open-ended-question" class="level2">
+<h2 class="anchored" data-anchor-id="open-ended-question">Open-ended Question</h2>
+<p>The speaker emphasizes that data science is not only about building machine learning models. Why are understanding the problem and interpreting data correctly just as important as technical skills?</p>
+<p><strong>Answer:</strong></p>
+<p>Understanding the problem is essential because data alone does not automatically produce useful insights. Analysts must interpret the data within the context of the real-world system they are studying. Without proper understanding, even advanced models can produce misleading conclusions. Therefore, combining analytical thinking, domain knowledge, and technical skills is necessary for effective data-driven decision making.</p>
+</section>
+<section id="multiple-choice-question" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice-question">Multiple Choice Question</h2>
+<p>According to the discussion in the video, which skill helps industrial engineers contribute effectively to data science projects?</p>
+<ol type="A">
+<li>Systems thinking and analytical problem solving<br>
+</li>
+<li>Memorizing programming syntax only<br>
+</li>
+<li>Avoiding statistical analysis<br>
+</li>
+<li>Ignoring the context of the data</li>
+</ol>
+<p><strong>Correct Answer:</strong> A</p>
+</section>
+<section id="r-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="r-analysis">R Analysis</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(polls_us_election_2016)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> polls_us_election_2016</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>my_first <span class="ot">&lt;-</span> <span class="st">"Habibe"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>my_birth_year <span class="ot">&lt;-</span> <span class="dv">2003</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>k <span class="ot">&lt;-</span> (<span class="fu">nchar</span>(my_first) <span class="sc">+</span> my_birth_year) <span class="sc">%%</span> <span class="dv">15</span> <span class="sc">+</span> <span class="dv">8</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>k</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 22</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (k <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(data, k)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tail</span>(data, k)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            state  startdate    enddate
+1            U.S. 2016-11-03 2016-11-06
+2            U.S. 2016-11-01 2016-11-07
+3            U.S. 2016-11-02 2016-11-06
+4            U.S. 2016-11-04 2016-11-07
+5            U.S. 2016-11-03 2016-11-06
+6            U.S. 2016-11-03 2016-11-06
+7            U.S. 2016-11-02 2016-11-06
+8            U.S. 2016-11-03 2016-11-05
+9      New Mexico 2016-11-06 2016-11-06
+10           U.S. 2016-11-04 2016-11-07
+11           U.S. 2016-11-04 2016-11-06
+12           U.S. 2016-11-01 2016-11-04
+13           U.S. 2016-11-03 2016-11-06
+14       Virginia 2016-11-03 2016-11-04
+15           U.S. 2016-11-01 2016-11-03
+16           Iowa 2016-11-01 2016-11-04
+17           U.S. 2016-11-05 2016-11-07
+18      Wisconsin 2016-10-26 2016-10-31
+19 North Carolina 2016-11-04 2016-11-06
+20        Georgia 2016-11-06 2016-11-06
+21        Florida 2016-11-03 2016-11-06
+22 North Carolina 2016-11-03 2016-11-06
+                                                     pollster grade samplesize
+1                                    ABC News/Washington Post    A+       2220
+2                                     Google Consumer Surveys     B      26574
+3                                                       Ipsos    A-       2195
+4                                                      YouGov     B       3677
+5                                            Gravis Marketing    B-      16639
+6  Fox News/Anderson Robbins Research/Shaw &amp; Company Research     A       1295
+7                                     CBS News/New York Times    A-       1426
+8                                NBC News/Wall Street Journal    A-       1282
+9                                                    Zia Poll  &lt;NA&gt;       8439
+10                                                   IBD/TIPP    A-       1107
+11                                           Selzer &amp; Company    A+        799
+12                                          Angus Reid Global    A-       1151
+13                                        Monmouth University    A+        748
+14                                      Public Policy Polling    B+       1238
+15                                             Marist College     A        940
+16                                           Selzer &amp; Company    A+        800
+17                                   The Times-Picayune/Lucid  &lt;NA&gt;       2521
+18                                       Marquette University     A       1255
+19                                              Siena College     A        800
+20                                    Landmark Communications     B       1200
+21                                      Quinnipiac University    A-        884
+22                                      Quinnipiac University    A-        870
+   population rawpoll_clinton rawpoll_trump rawpoll_johnson rawpoll_mcmullin
+1          lv           47.00         43.00            4.00               NA
+2          lv           38.03         35.69            5.46               NA
+3          lv           42.00         39.00            6.00               NA
+4          lv           45.00         41.00            5.00               NA
+5          rv           47.00         43.00            3.00               NA
+6          lv           48.00         44.00            3.00               NA
+7          lv           45.00         41.00            5.00               NA
+8          lv           44.00         40.00            6.00               NA
+9          lv           46.00         44.00            6.00               NA
+10         lv           41.20         42.70            7.10               NA
+11         lv           44.00         41.00            4.00               NA
+12         lv           48.00         44.00            6.00               NA
+13         lv           50.00         44.00            4.00               NA
+14         lv           48.00         43.00            1.00               NA
+15         lv           44.00         43.00            6.00               NA
+16         lv           39.00         46.00            6.00               NA
+17         lv           45.00         40.00            5.00               NA
+18         lv           46.00         40.00            4.00               NA
+19         lv           44.00         44.00            3.00               NA
+20         lv           46.00         49.00            3.00               NA
+21         lv           46.00         45.00            2.00               NA
+22         lv           47.00         45.00            3.00               NA
+   adjpoll_clinton adjpoll_trump adjpoll_johnson adjpoll_mcmullin
+1         45.20163      41.72430        4.626221               NA
+2         43.34557      41.21439        5.175792               NA
+3         42.02638      38.81620        6.844734               NA
+4         45.65676      40.92004        6.069454               NA
+5         46.84089      42.33184        3.726098               NA
+6         49.02208      43.95631        3.057876               NA
+7         45.11649      40.92722        4.341786               NA
+8         43.58576      40.77325        5.365788               NA
+9         44.82594      41.59978        7.870127               NA
+10        42.92745      42.23545        6.316175               NA
+11        44.21714      40.57082        4.068708               NA
+12        47.57171      43.68125        5.556625               NA
+13        48.86765      43.39600        4.838600               NA
+14        47.43805      42.32751        2.207659               NA
+15        42.83406      43.43819        4.780429               NA
+16        39.37561      45.66917        6.062713               NA
+17        45.13966      42.26495        3.679914               NA
+18        46.10344      40.97982        2.897062               NA
+19        44.21875      45.08290        2.335250               NA
+20        45.06470      48.80363        3.662548               NA
+21        46.44315      43.93999        2.098310               NA
+22        47.43742      43.93745        3.098310               NA</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(data))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 11604</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">colSums</span>(<span class="fu">is.na</span>(data)), <span class="at">decreasing =</span> <span class="cn">TRUE</span>)[<span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>rawpoll_mcmullin adjpoll_mcmullin  rawpoll_johnson  adjpoll_johnson 
+            4178             4178             1409             1409 
+           grade       samplesize            state        startdate 
+             429                1                0                0 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>new_data <span class="ot">&lt;-</span> data</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(new_data)) {</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.numeric</span>(new_data[[i]])) {</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    new_data[[i]][<span class="fu">is.na</span>(new_data[[i]])] <span class="ot">&lt;-</span> my_birth_year <span class="sc">+</span> k</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">is.character</span>(new_data[[i]])) {</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    new_data[[i]][<span class="fu">is.na</span>(new_data[[i]])] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(my_first, <span class="st">"_"</span>, k)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">is.factor</span>(new_data[[i]])) {</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    new_data[[i]] <span class="ot">&lt;-</span> <span class="fu">as.character</span>(new_data[[i]])</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    new_data[[i]][<span class="fu">is.na</span>(new_data[[i]])] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(my_first, <span class="st">"_"</span>, k)</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">inherits</span>(new_data[[i]], <span class="st">"Date"</span>)) {</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>    new_data[[i]][<span class="fu">is.na</span>(new_data[[i]])] <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(<span class="st">"2000-01-01"</span>)</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (k <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(new_data, k)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tail</span>(new_data, k)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            state  startdate    enddate
+1            U.S. 2016-11-03 2016-11-06
+2            U.S. 2016-11-01 2016-11-07
+3            U.S. 2016-11-02 2016-11-06
+4            U.S. 2016-11-04 2016-11-07
+5            U.S. 2016-11-03 2016-11-06
+6            U.S. 2016-11-03 2016-11-06
+7            U.S. 2016-11-02 2016-11-06
+8            U.S. 2016-11-03 2016-11-05
+9      New Mexico 2016-11-06 2016-11-06
+10           U.S. 2016-11-04 2016-11-07
+11           U.S. 2016-11-04 2016-11-06
+12           U.S. 2016-11-01 2016-11-04
+13           U.S. 2016-11-03 2016-11-06
+14       Virginia 2016-11-03 2016-11-04
+15           U.S. 2016-11-01 2016-11-03
+16           Iowa 2016-11-01 2016-11-04
+17           U.S. 2016-11-05 2016-11-07
+18      Wisconsin 2016-10-26 2016-10-31
+19 North Carolina 2016-11-04 2016-11-06
+20        Georgia 2016-11-06 2016-11-06
+21        Florida 2016-11-03 2016-11-06
+22 North Carolina 2016-11-03 2016-11-06
+                                                     pollster     grade
+1                                    ABC News/Washington Post        A+
+2                                     Google Consumer Surveys         B
+3                                                       Ipsos        A-
+4                                                      YouGov         B
+5                                            Gravis Marketing        B-
+6  Fox News/Anderson Robbins Research/Shaw &amp; Company Research         A
+7                                     CBS News/New York Times        A-
+8                                NBC News/Wall Street Journal        A-
+9                                                    Zia Poll Habibe_22
+10                                                   IBD/TIPP        A-
+11                                           Selzer &amp; Company        A+
+12                                          Angus Reid Global        A-
+13                                        Monmouth University        A+
+14                                      Public Policy Polling        B+
+15                                             Marist College         A
+16                                           Selzer &amp; Company        A+
+17                                   The Times-Picayune/Lucid Habibe_22
+18                                       Marquette University         A
+19                                              Siena College         A
+20                                    Landmark Communications         B
+21                                      Quinnipiac University        A-
+22                                      Quinnipiac University        A-
+   samplesize population rawpoll_clinton rawpoll_trump rawpoll_johnson
+1        2220         lv           47.00         43.00            4.00
+2       26574         lv           38.03         35.69            5.46
+3        2195         lv           42.00         39.00            6.00
+4        3677         lv           45.00         41.00            5.00
+5       16639         rv           47.00         43.00            3.00
+6        1295         lv           48.00         44.00            3.00
+7        1426         lv           45.00         41.00            5.00
+8        1282         lv           44.00         40.00            6.00
+9        8439         lv           46.00         44.00            6.00
+10       1107         lv           41.20         42.70            7.10
+11        799         lv           44.00         41.00            4.00
+12       1151         lv           48.00         44.00            6.00
+13        748         lv           50.00         44.00            4.00
+14       1238         lv           48.00         43.00            1.00
+15        940         lv           44.00         43.00            6.00
+16        800         lv           39.00         46.00            6.00
+17       2521         lv           45.00         40.00            5.00
+18       1255         lv           46.00         40.00            4.00
+19        800         lv           44.00         44.00            3.00
+20       1200         lv           46.00         49.00            3.00
+21        884         lv           46.00         45.00            2.00
+22        870         lv           47.00         45.00            3.00
+   rawpoll_mcmullin adjpoll_clinton adjpoll_trump adjpoll_johnson
+1              2025        45.20163      41.72430        4.626221
+2              2025        43.34557      41.21439        5.175792
+3              2025        42.02638      38.81620        6.844734
+4              2025        45.65676      40.92004        6.069454
+5              2025        46.84089      42.33184        3.726098
+6              2025        49.02208      43.95631        3.057876
+7              2025        45.11649      40.92722        4.341786
+8              2025        43.58576      40.77325        5.365788
+9              2025        44.82594      41.59978        7.870127
+10             2025        42.92745      42.23545        6.316175
+11             2025        44.21714      40.57082        4.068708
+12             2025        47.57171      43.68125        5.556625
+13             2025        48.86765      43.39600        4.838600
+14             2025        47.43805      42.32751        2.207659
+15             2025        42.83406      43.43819        4.780429
+16             2025        39.37561      45.66917        6.062713
+17             2025        45.13966      42.26495        3.679914
+18             2025        46.10344      40.97982        2.897062
+19             2025        44.21875      45.08290        2.335250
+20             2025        45.06470      48.80363        3.662548
+21             2025        46.44315      43.93999        2.098310
+22             2025        47.43742      43.93745        3.098310
+   adjpoll_mcmullin
+1              2025
+2              2025
+3              2025
+4              2025
+5              2025
+6              2025
+7              2025
+8              2025
+9              2025
+10             2025
+11             2025
+12             2025
+13             2025
+14             2025
+15             2025
+16             2025
+17             2025
+18             2025
+19             2025
+20             2025
+21             2025
+22             2025</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(new_data))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anyNA</span>(new_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
 
 
 </section>
