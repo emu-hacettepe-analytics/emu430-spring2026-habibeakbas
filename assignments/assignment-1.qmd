@@ -32,7 +32,7 @@ Another important idea discussed in the video is the importance of combining tec
 
 Overall, the video highlights how industrial engineering provides a strong foundation for working in data science, especially in areas such as decision making, optimization, and process improvement.
 
-## (b)
+## 
 
 ## Open-ended Question
 
@@ -52,6 +52,8 @@ C)  Avoiding statistical analysis\
 D)  Ignoring the context of the data
 
 **Correct Answer:** A
+
+## (b)
 
 ## R Analysis
 
@@ -124,3 +126,5 @@ sum(is.na(new_data))
 ```{r}
 anyNA(new_data)
 ```
+
+AI assistance was used to improve the wording and structure of some parts of this page. Prompt used: "Bu ödevi nasıl yapacağımı açıkla" and "Bu videoyu nasıl özetleyebilirim?"
